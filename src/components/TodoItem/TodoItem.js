@@ -1,6 +1,6 @@
 import React from "react";
 import "./TodoItem.css";
-import {useState} from "react";
+import { useState } from "react";
 
 function Todo(props) {
   const { content } = props;
@@ -10,8 +10,14 @@ function Todo(props) {
     setActive(!isActive);
   };
 
-  return <div className={isActive ? 'checked': null} 
-  onClick={toggleClass} > {content}</div>;
+  return (
+    <div>
+      <li className={isActive ? "checked" : null} onClick={toggleClass}>
+        {content}
+      </li>
+      <button className="btn btn-danger btnItem"> Sil </button>
+    </div>
+  );
 }
 
 export default Todo;

@@ -3,7 +3,6 @@ import TodoItem from "../TodoItem/TodoItem";
 import "./TodoList.css";
 
 function TodoList(props) {
-  
   return (
     <div>
       <ul>
