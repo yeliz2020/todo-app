@@ -15,3 +15,8 @@ ul>li:hover {
 h1 {
     text-align: center;
 }
+
+.checked {
+    text-decoration: line-through;
+    list-style: none;
+}

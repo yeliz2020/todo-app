@@ -51,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TodoHeader></TodoHeader>
+        <TodoHeader header="Todo List"/>
         <Form
           userInput={this.state.userInput}
           onInputChange={this.onInputChange}
